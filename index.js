@@ -16,7 +16,7 @@ const toggleButton = () => {
 const toggleNavbar = () => {
   const nav = document.querySelector(".nav");
   const navBar = document.querySelector(`.navbar`);
-  const logo = document.querySelector(".logo img");
+  const logo = document.querySelector("#logoimg");
   console.log("logo" + logo);
   const hamburgers = document.querySelectorAll(".hamburger");
   const info = document.querySelector(".info");
@@ -31,7 +31,7 @@ const toggleNavbar = () => {
     navBar.style.color = "#000000";
   } else {
     nav.style.backgroundColor = "transparent";
-    logo.src = "assets/virgin-active-logo-black.svg";
+    logo.src = "assets/virgin-active-logo-white.svg";
     hamburgers.forEach((hamburger) => {
       hamburger.style.backgroundColor = "#ffffff";
     });
